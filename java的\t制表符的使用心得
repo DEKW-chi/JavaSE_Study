@@ -1,0 +1,15 @@
+用法：  \t前字符串<4个字节时，输出时自动补全至☞4个字节，补全的部分用空格填充
+                 >=4（或者比8大，而且是4的倍数的数）个字节，自动补全只比当前字符串字节数大的，而且是4的倍数的数个字节，补全的部分用空格填充
+                 
+注意：一个汉字两个字节，一个字母一个字节
+
+代码：System.out.println("进程名\tMax \tAllocation\tNeed\ta");
+        System.out.println("abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd");
+        System.out.printf("%-3d\ta\n",1);
+        System.out.printf("%-7d\ta\n",1);
+        System.out.printf("%-8d\ta\n",1);
+        System.out.printf("%-11d\ta\n",1);
+        System.out.printf("%-12d\ta\n",1);
+        
+输出结果：
+显示不准确，自己测试
